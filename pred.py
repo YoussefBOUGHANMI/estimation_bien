@@ -19,7 +19,7 @@ def ft_pred(type_bien, surface_m2,
     mapping_dpe = {"A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6, "G": 7}
     dpe = mapping_dpe[dpe]
 
-    model = joblib.load("/mount/src/estimation_bien/utils/model.joblib")
+    model = joblib.load("utils/model.joblib")
 
     estimation = model.predict([[type_bien, surface_m2, 
             nb_pieces, nb_chambres, etage,
